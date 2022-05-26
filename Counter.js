@@ -1,13 +1,14 @@
 import React from 'react'
 import { PropTypes } from 'prop-types';
-
+import { faker } from '@faker-js/faker'
 const Counter = ({ value, onIncrement, onDecrement, onIncrementAsync }) =>
   <div>
     <button onClick={onIncrementAsync}>
-      Increment after 1 second
+      Increment *2
     </button>
+    {' '}
     <button onClick={onIncrement}>
-      Increment
+      Increment +1
     </button>
     {' '}
     <button onClick={onDecrement}>
@@ -17,7 +18,9 @@ const Counter = ({ value, onIncrement, onDecrement, onIncrementAsync }) =>
     <div>
       Clicked: {value} times
     </div>
+    <div>Your lucky name:{faker.name.findName()}</div>
   </div>
+
 
 Counter.propTypes = {
   value: PropTypes.number.isRequired,

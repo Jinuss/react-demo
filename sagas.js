@@ -4,10 +4,8 @@ export function* helloSaga() {
     console.log('hellow sagas!')
 }
 
-export function* IncrementAync() {
-    const state = select();
-    console.log(state);
-    yield put({ type: "INCREMENT_ASYNC", data: new Date().toDateString() })
+export function* IncrementAync({ value }) {
+    yield put({ type: "INCREMENT_ASYNC", value: value * 2 })
 }
 export function* watchFunc() {
     yield takeEvery('INCREMENTASYNC', IncrementAync)

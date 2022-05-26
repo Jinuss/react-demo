@@ -7,8 +7,8 @@ export default function counter(state = 0, action) {
     case 'DECREMENT':
       return state - 1
     case 'INCREMENT_ASYNC':
-      console.log(action.data)
-      return action.data
+      console.log(action.value)
+      return action.value
     default:
       return state
   }
