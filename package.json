@@ -1,11 +1,12 @@
 {
-  "name": "redux-saga-beginner-tutorial",
+  "name": "react-tutorial",
   "version": "0.0.1",
   "description": "Redux Saga beginner tutorial",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "start": "budo main.js:build.js --dir ./ --verbose  --live -- -t babelify"
+    "start": "budo main.js:build.js --dir ./ --verbose  --live -- -t babelify",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,10 @@
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@commitlint/cli": "^17.0.1",
+    "@commitlint/config-conventional": "^17.0.0",
     "@faker-js/faker": "^6.2.0",
+    "husky": "^8.0.1",
     "mobx": "^6.6.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
