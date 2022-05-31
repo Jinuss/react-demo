@@ -15,5 +15,7 @@
 
 ### git commit 强制规范
 
-- `commitlint`
-- `husky`
+- `commitlint`:commit message 检查
+- `husky`: git hook,防止不规范的 commit 和 push
+
+> :link:[https://zhuanlan.zhihu.com/p/366786798](https://zhuanlan.zhihu.com/p/366786798)
